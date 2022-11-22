@@ -1,4 +1,4 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from "axios";
 import React from "react";
 
@@ -54,12 +54,18 @@ export default function App() {
 
   return (
     <div>{post.map((postObject) => (
-      <div>
-        <h1>{postObject.title}</h1>
-        <p>{postObject.body}</p>
+      
+      <div class="card border-primary mb-3">
+       <div class="card-body text-primary">
+        <h1 class='card-title'>{postObject.title}</h1>
+        <p class='card-text'>{postObject.body}</p>
         <button onClick={createPost}>Create Post</button>
         <button id={postObject.id} onClick={updatePost}>Update Post</button>
         <button id={postObject.id} onClick={deletePost}>Delete Post</button>
+        </div>
+        
+        
+        
       </div>
     ))}
     </div>
