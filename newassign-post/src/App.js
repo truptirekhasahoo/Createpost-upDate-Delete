@@ -59,9 +59,9 @@ export default function App() {
        <div class="card-body text-primary">
         <h1 class='card-title'>{postObject.title}</h1>
         <p class='card-text'>{postObject.body}</p>
-        <button onClick={createPost}>Create Post</button>
-        <button id={postObject.id} onClick={updatePost}>Update Post</button>
-        <button id={postObject.id} onClick={deletePost}>Delete Post</button>
+        <button onClick={createPost}>Create</button>
+        <button id={postObject.id} onClick={updatePost}>Update</button>
+        <button id={postObject.id} onClick={deletePost}>Delete</button>
         </div>
         
         
